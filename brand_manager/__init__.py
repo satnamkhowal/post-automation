@@ -1,0 +1,2 @@
+"""Brand Manager MCP server."""
+

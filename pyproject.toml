@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brand-manager-mcp"
+version = "0.1.0"
+description = "Safety-first MCP server for multi-brand Google Business Profile management"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.9,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+brand-manager = "brand_manager.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
